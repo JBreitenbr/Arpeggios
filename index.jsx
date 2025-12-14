@@ -1,5 +1,5 @@
 const { useState, useEffect, useRef } = React;
-import * as Tone from "tone";
+//import * as Tone from "tone";
 export const App = () => {const [isPlaying, setIsPlaying] = useState(false);
   const [bpm, setBpm] = useState(100);
 
