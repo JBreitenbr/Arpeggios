@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Julias Arpeggiator</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -25,7 +26,7 @@
       data-type="module"
     >
 let {useState,useEffect,useRef} = React;
-function App() {/*const [isPlaying, setIsPlaying] = useState(false);
+function App() {const [isPlaying, setIsPlaying] = useState(false);
   const [bpm, setBpm] = useState(100);
 
   const synthRef = useRef(null);
@@ -71,11 +72,11 @@ function App() {/*const [isPlaying, setIsPlaying] = useState(false);
       }
       setIsPlaying(false);
     }
-  };    */                       
+  };                         
   return (
     <main> 
       <h4>Mini-Arpeggiator 🎹</h4>
-    { /* <button onClick={handleToggle}>{isPlaying ? "Stop" : "Play"}</button>*/}
+    <button onClick={handleToggle}>{isPlaying ? "Stop" : "Play"}</button>
     </main>
   )
 }
