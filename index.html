@@ -25,7 +25,7 @@
       data-type="module"
     >
 import {useState,useEffect,useRef} = React;
-function App() {const [isPlaying, setIsPlaying] = useState(false);
+function App() {/*const [isPlaying, setIsPlaying] = useState(false);
   const [bpm, setBpm] = useState(100);
 
   const synthRef = useRef(null);
@@ -71,11 +71,11 @@ function App() {const [isPlaying, setIsPlaying] = useState(false);
       }
       setIsPlaying(false);
     }
-  };                           
+  };    */                       
   return (
     <main> 
       <h4>Mini-Arpeggiator 🎹</h4>
-      <button onClick={handleToggle}>{isPlaying ? "Stop" : "Play"}</button>
+    { /* <button onClick={handleToggle}>{isPlaying ? "Stop" : "Play"}</button>*/}
     </main>
   )
 }
